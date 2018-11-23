@@ -1,0 +1,11 @@
+group Server
+
+DotNetNuke.Core 
+DotNetNuke.WebApi 
+Microsoft.AspNet.WebApi 
+Microsoft.AspNet.WebApi.Core 
+Microsoft.AspNet.WebApi.Client 
+System.ValueTuple
+Newtonsoft.Json
+Thoth.Json.Net
+FSharp.Core

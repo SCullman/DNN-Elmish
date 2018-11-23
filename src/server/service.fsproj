@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net461</TargetFramework>
+    <DebugType>portable</DebugType>
+    <AssemblyName>MyProject.Service</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\shared\Domain.fs" />
+    <Compile Include="..\shared\Api.fs" />
+    <Compile Include="Adapter.fs" />
+    <Compile Include="Repositories.fs" />
+    <Compile Include="Mapper.fs" />
+    <Compile Include="Queries.fs" />
+    <Compile Include="CommandHandler.fs" />
+    <Compile Include="Service.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PetaPoco">
+      <HintPath>..\..\.lib\PetaPoco.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>

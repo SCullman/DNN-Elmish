@@ -1,0 +1,34 @@
+{
+   "Elmish Module": {
+       "prefix": "module_elm",
+       "body": [
+         "module MyProject.NewModule", 
+         "open Shared.Domain", 
+         "",
+         "module Types =", 
+         "   type Model = Dummy", 
+         "   type Msg = DummyMsg", 
+         "", 
+         "module State = ", 
+         "   open Types", 
+         "   open Elmish", 
+         "", 
+         "   let init () = Dummy.neu, Cmd.none", 
+         "",
+         "   let update msg model = ", 
+         "      match msg with", 
+         "      | _ -> model, Cmd.none", 
+         "", 
+         "module View =", 
+         "   open Types", 
+         "   open Fable.Helpers.React", 
+         "   open Fable.Helpers.React.Props", 
+         "",
+         "   let render model dispatch = ", 
+         "      str \"Dummy\""
+       ],
+       "description": "Elmish Module"
+   }
+}
+
+

@@ -1,0 +1,30 @@
+group Client
+   framework: auto-detect
+   source https://nuget.org/api/v2
+   storage:none
+
+   nuget Fable.Elmish.HMR
+   nuget FSharp.Core
+   nuget Fable.Core
+   nuget Fable.Elmish.React
+   nuget Fable.Elmish.Browser
+   nuget Fable.Elmish.Debugger
+   
+   nuget Fable.React.Flatpickr
+   clitool dotnet-fable
+
+group Server
+   framework: auto-detect
+   source https://nuget.org/api/v2
+   storage:none
+
+   nuget Thoth.Json.Net 2.5.0
+   nuget DotNetNuke.Core 8.0.4.226 
+   nuget DotNetNuke.WebApi 8.0.4.226 
+   nuget Microsoft.AspNet.WebApi 5.2.3.0
+   nuget Microsoft.AspNet.WebApi.Core 5.2.3.0
+   nuget Microsoft.AspNet.WebApi.Client 5.2.3.0
+   nuget System.ValueTuple
+   nuget Newtonsoft.Json
+   nuget FSharp.Core
+

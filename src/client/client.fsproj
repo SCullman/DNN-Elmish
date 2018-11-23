@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="TryParser.fs" />
+    <Compile Include="Dnn.fs" />
+    <Compile Include="..\Shared\Domain.fs" />
+    <Compile Include="..\Shared\Api.fs" />
+    <Compile Include="Global.fs" />
+    <!-- <Compile Include="MyProject/Api.fs" />  -->
+     <Compile Include="MyProject/ApiFake.fs" />
+    <Compile Include="MyProject/Dummy.fs" />
+    <Compile Include="MyProject/Types.fs" />
+    <Compile Include="MyProject/State.fs" />
+    <Compile Include="MyProject/View.fs" />
+    <Compile Include="App.fs" />
+  </ItemGroup>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>
